@@ -1,10 +1,12 @@
 <?php
 
 /**
- * TDM: Insert module at cursor.
+ * TDM: Course module access report.
  *
- * @author Luke Carrier <luke@tdm.co>
+ * @package   report_tdmmodaccess
+ * @author    Luke Carrier <luke@tdm.co>
  * @copyright (c) 2014 The Development Manager Ltd
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 require_once dirname(dirname(__DIR__)) . '/config.php';
