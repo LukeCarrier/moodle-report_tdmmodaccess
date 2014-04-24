@@ -27,7 +27,9 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->component = 'report_tdmmodaccess';
-$plugin->release   = '0.1.0';
+
+$plugin->release  = '0.1.0';
+$plugin->maturity = MATURITY_BETA;
 
 // Version format:  YYYYMMDDXX
 $plugin->version  = 2014021900;
