@@ -25,13 +25,19 @@ License
 Requirements
 ------------
 
-* Quite likely any version of Moodle 2, but has only been tested with 2.6.x
+* Moodle version 2.6 or below (2.7's new logging system isn't supported yet -- I'll implement this very soon!)
+
+Building
+--------
+
+1. Clone this repository, and ````cd```` into it
+2. Execute ````make```` to generate a zip file containing the plugin
+3. Upload to the ````moodle.org```` plugins site
 
 Installation
-------------
-
-1. Clone this repository into report/tdmmodaccess
-2. Browse to Site Administration -> Notifications and allow the database upgrades to execute
-3. You may need to manually edit the desired teacher/administrator roles to grant them the
-   ````report/tdmmodaccess:view```` capability.
-
+-------------
+1. Copy the zip file to your server
+2. Extract the zip file and move the ````tdmmodaccess```` directory to your Moodle's ````local```` directory
+3. Browse to Site Administration -> Notifications and allow the database upgrades to execute
+4. You may need to manually edit the desired teacher/administrator roles to grant them the
+   ````report/tdmmodaccess:view```` capability
