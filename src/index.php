@@ -25,6 +25,7 @@
  */
 
 require_once dirname(dirname(__DIR__)) . '/config.php';
+require_once __DIR__ . '/lib.php';
 
 $course  = required_param('course',     PARAM_INT);
 $section = optional_param('section', 0, PARAM_INT);

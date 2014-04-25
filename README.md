@@ -25,7 +25,7 @@ License
 Requirements
 ------------
 
-* Moodle version 2.6 or below (2.7's new logging system isn't supported yet -- I'll implement this very soon!)
+* Moodle versions 2.4 through 2.6 (Moodle 2.7 coming very soon)
 
 Building
 --------

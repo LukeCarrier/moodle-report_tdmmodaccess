@@ -26,6 +26,15 @@
 
 defined('MOODLE_INTERNAL') || die;
 
+// Register an autoloader Moodle <2.6
+if ($CFG->version < 2013111800) {
+    spl_autoload_register(function($classname) {
+        if (substr($classname, 0, 20) === 'report_tdmmodaccess_') {
+            require __DIR__ . '/classes/' . substr($classname, 20) . '.php';
+        }
+    });
+}
+
 /**
  * Add report to the course navigation.
  *
