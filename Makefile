@@ -17,7 +17,7 @@ clean:
 build/report_tdmmodaccess.zip:
 	mkdir -p $(TOP)build
 	cp -rv $(TOP)src $(TOP)build/tdmmodaccess
-	cp $(TOP)README.md $(TOP)build/tdmmodaccess
+	cp $(TOP)README.md $(TOP)build/tdmmodaccess/README.txt
 	cd $(TOP)build \
 		&& zip -r report_tdmmodaccess.zip tdmmodaccess
 	rm -rfv $(TOP)build/tdmmodaccess
