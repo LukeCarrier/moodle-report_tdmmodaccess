@@ -36,8 +36,9 @@ Building
 
 Installation
 -------------
+
 1. Copy the zip file to your server
-2. Extract the zip file and move the ````tdmmodaccess```` directory to your Moodle's ````local```` directory
+2. Extract the zip file and move the ````tdmmodaccess```` directory to your Moodle's ````report```` directory
 3. Browse to Site Administration -> Notifications and allow the database upgrades to execute
 4. You may need to manually edit the desired teacher/administrator roles to grant them the
    ````report/tdmmodaccess:view```` capability
