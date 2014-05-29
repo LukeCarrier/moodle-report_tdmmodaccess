@@ -107,7 +107,7 @@ try {
         );
 
         foreach ($record->get_completion() as $cmcompletion) {
-            $row[] = $cmcompletion->count;
+            $row[] = $cmcompletion->actioncount;
         }
 
         $table->data[] = $row;

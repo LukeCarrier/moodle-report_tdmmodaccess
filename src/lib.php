@@ -26,7 +26,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// Register an autoloader Moodle <2.6
+// Register an autoloader for Moodle <2.6
 if ($CFG->version < 2013111800) {
     spl_autoload_register(function($classname) {
         if (substr($classname, 0, 20) === 'report_tdmmodaccess_') {

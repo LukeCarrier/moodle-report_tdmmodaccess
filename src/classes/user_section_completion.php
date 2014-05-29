@@ -76,7 +76,7 @@ class report_tdmmodaccess_user_section_completion {
         $params['user']   = $this->user->id;
 
         $sql = <<<SQL
-SELECT cmid, COUNT(action) AS `count`
+SELECT cmid, COUNT(action) AS actioncount
 FROM {log}
 WHERE cmid {$cmsql}
     AND course = :course
@@ -95,8 +95,8 @@ SQL;
                 $this->completion[$cm] = $completion[$cm];
             } else {
                 $this->completion[$cm] = (object) array(
-                    'cmid'  => $cm,
-                    'count' => 0,
+                    'cmid'        => $cm,
+                    'actioncount' => 0,
                 );
             }
         }
@@ -114,7 +114,7 @@ SQL;
     /**
      * Get the completion object.
      *
-     * @return stdClass[] An array of record objects, each containing cmid and count fields.
+     * @return stdClass[] An array of record objects, each containing cmid and actioncount fields.
      */
     public function get_completion() {
         return $this->completion;
