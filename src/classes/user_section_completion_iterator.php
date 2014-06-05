@@ -86,7 +86,8 @@ class report_tdmmodaccess_user_section_completion_iterator implements Iterator {
     public function current() {
         $user = current($this->records);
 
-        return new report_tdmmodaccess_user_section_completion($user, $this->course, $this->section);
+        return ($user === false)
+                ? false : new report_tdmmodaccess_user_section_completion($user, $this->course, $this->section);
     }
 
     /**
