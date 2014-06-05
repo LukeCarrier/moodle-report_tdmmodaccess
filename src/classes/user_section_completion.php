@@ -31,6 +31,14 @@ defined('MOODLE_INTERNAL') || die;
  */
 class report_tdmmodaccess_user_section_completion {
     /**
+     * Action counts for each course module.
+     *
+     * @var stdClass[] An array of records, indexed by the course module's ID, each containing cmid and actioncount
+     *                 properties.
+     */
+    protected $completion;
+
+    /**
      * Couse.
      *
      * @var course_modinfo
