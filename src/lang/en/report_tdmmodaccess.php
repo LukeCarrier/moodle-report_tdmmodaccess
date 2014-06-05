@@ -33,9 +33,9 @@ $string['pluginname'] = 'TDM: course module access';
 $string['tdmmodaccess:view'] = 'View activity access report';
 
 // Generic
+$string['changesection'] = 'Select a section from the list to view its access report';
 $string['modaccess']     = 'Activity access';
 $string['modaccessfor']  = 'Activity access for {$a->sectionname} in {$a->coursefullname}';
-$string['changesection'] = 'Select a section from the list to view its access report';
 $string['section']       = 'Section {$a}';
 
 // Errors

@@ -126,6 +126,6 @@ echo $OUTPUT->header(),
      $OUTPUT->render($changesection),
      html_writer::tag('div', '', array(
         'class' => 'clearfix',
-    )),
+     )),
      html_writer::table($table),
      $OUTPUT->footer();
