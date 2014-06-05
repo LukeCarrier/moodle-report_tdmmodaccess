@@ -73,6 +73,9 @@ class report_tdmmodaccess_user_section_completion_iterator implements Iterator {
         $this->section = $section;
 
         $this->records = get_enrolled_users($context);
+        if (empty($this->records)) {
+            throw new report_tdmmodaccess_no_enrolled_users_exception($course->courseid);
+        }
     }
 
     /**

@@ -26,18 +26,15 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-// Module metadata
-$string['pluginname'] = 'TDM: course module access';
-
-// Capabilities
-$string['tdmmodaccess:view'] = 'View activity access report';
-
-// Generic
-$string['changesection'] = 'Select a section from the list to view its access report';
-$string['modaccess']     = 'Activity access';
-$string['modaccessfor']  = 'Activity access for {$a->sectionname} in {$a->coursefullname}';
-$string['section']       = 'Section {$a}';
-
-// Errors
-$string['nocms']           = 'There are no activities to report upon in the selected course section';
-$string['noenrolledusers'] = 'There must be users enrolled on this course in order to display this report';
+/**
+ * No course modules are available to report upon.
+ */
+class report_tdmmodaccess_no_enrolled_users_exception extends moodle_exception {
+    /**
+     * Initialiser.
+     */
+    public function __construct($courseid) {
+        parent::__construct('noenrolledusers', 'report_tdmmodaccess',
+                            new moodle_url('/course/view.php', array('id' => $courseid)));
+    }
+}
