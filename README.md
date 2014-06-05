@@ -4,6 +4,9 @@ Activity access report (participation at section level)
 This Moodle plugin provides a participation report tailored to course sections as opposed to individual activities. It
 provides a light integration with the existing participation report to enable teachers to drill down further.
 
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LukeCarrier/moodle-report_tdmmodaccess/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/LukeCarrier/moodle-report_tdmmodaccess/?branch=master)
+
 License
 -------
 
