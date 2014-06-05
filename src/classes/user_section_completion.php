@@ -86,7 +86,7 @@ SQL;
 
         $completion = $DB->get_records_sql($sql, $params);
         if ($completion === false) {
-            $competion = array();
+            $completion = array();
         }
 
         $this->completion = array();
